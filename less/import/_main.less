@@ -1,0 +1,44 @@
+/*!main*/
+.section__cake-gallery{
+    padding: 50px 0;
+    background: #bdc3c7;
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cake_img{
+    vertical-align: middle;
+    width: 23%;
+    margin-bottom: 20px;
+
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+
+    &:hover{
+        opacity: 0.6;
+    }
+    &:focus{
+        opacity: 0.6;
+    }
+
+    @media screen and (max-width: 1160px) {
+        width: 30%;
+    }
+
+    @media screen and (max-width: 620px) {
+        width: 45%;
+    }
+
+    @media screen and (max-width: 450px) {
+        width: 100%;
+
+        &:not(:last-child){
+            margin-right: 0;
+        }
+    }
+}
